@@ -1,0 +1,317 @@
+<!doctype html>
+<html class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="../src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<!-- //Responsive for screen width 2560px, 1440px, 375px-->
+
+<body>
+    <!-- //full of header -->
+    <header class="h-14 bg-blue-300 font-bold w-full flex justify-center  items-center 
+                    xl:h-28 xl:
+                    lg:h-26
+                    md:
+                    sm: ">
+
+        <!-- logo sport -->
+        <div class="xl:w-30">
+            <div class=" ml-1.5  xl:ml-65  xl:w-28 xl:h-28 xl:rounded-[56px] 
+                        w-16 h-12 flex justify-center items-center">
+                <img class="lg:-ml-95 w-11 h-11 rounded-[40px] lg:rounded-[60px]
+                         xl:w-27 xl:h-27" src="../src/assets/images/image.png" alt="">
+            </div>
+        </div>
+
+        <!-- navbar -->
+        <div class="w-full gap-2 -mr-3 h-auto text-[9px] items-center text-white flex justify-center 
+                xl:pr-10 2xl:w-115 2xl:h-12.5 2xl:text-[30px] 2xl:ml-110 2xl:gap-13 2xl:
+                lg:pr-0 lg:w-115 lg:h-12.5 lg:text-[25px] lg:ml-40 lg:gap-5 
+                md:pr-0 md:w-115 md:h-12.5 md:text-[15px] md:ml-50 md:gap-1 md: 
+                sm:pr-0 sm:w-115 sm:h-12.5 sm:text-[10px] sm:ml-50 sm:gap-1 sm: ">
+
+            <a href="../index.html" class="hover:rounded-2xl hover:text-blue-500">Home</a>
+            <a href="../html/about.html" class="hover:rounded-2xl  hover:text-blue-500">About</a>
+            <a href="../html/product.html" class="hover:rounded-2xl hover:text-blue-500">Product</a>
+            <a href="../html/contact.html" class="hover:rounded-2xl hover:text-blue-500">Contact</a>
+        </div>
+
+        <div class="flex justify-center items-center h-auto w-full  gap-4">
+
+            <!-- Category Dropdown -->
+            <div class="h-full flex items-center justify-center 
+                        xl:-ml-15 
+                        lg: lg:h-28 lg:w-150 
+                        md: 
+                        sm: sm:text-[1px] sm:w-15">
+                <select onchange="goToPage(this)" class="w-13 font-normal 
+                       p-1 border rounded-2xl -mr-3 xl:w-50 xl:h-12 xl:text-[24px]
+                       focus:outline-none focus:ring-2 focus:ring-blue-300
+                       text-white text-[8px] lg:-ml-65
+                       cursor-pointer shadow-lg shadow-green-500/50
+                       hover:bg-green-300 hover:text-white">
+
+                    <option selected disabled>Select Category</option>
+                    <option value="../html/product.html" class="bg-green-300 font-bold">Basketball</option>
+                    <option value="../html/product.html" class="bg-green-300 font-bold">Football</option>
+                    <option value="../html/product.html" class="bg-green-300 font-bold">Tennis</option>
+                    <option value="../html/product.html" class="bg-green-300 font-bold">Cycling</option>
+                    <option value="../html/product.html" class="bg-green-300 font-bold">Swimming</option>
+                    <option value="../html/product.html" class="bg-green-300 font-bold">Fitness & Gym</option>
+                </select>
+            </div>
+
+            <!-- dark mode -->
+            <div class=" flex items-center justify-center lg:-ml-40">
+                <button class="flex justify-center items-center -mr-4 w-5 h-5 rounded-[14px]
+                xl:-ml-65 xl:w-14 xl:h-14 xl:rounded-[30px] hover:border hover:border-white" onclick="toggle()">
+                    <img id="themeIcon" class="flex justify-center items-center xl:w-11 xl:h-11 w-3 h-3 cursor-pointer invert brightness-0 
+                                                " src="../src/assets/icons/night.png" alt="">
+                </button>
+            </div>
+
+            <!-- shopping -->
+            <div class="h-full flex items-center justify-center mr-3 lg:mr-10">
+                <a class="h-7 w-13 text-[10px] rounded-2xl bg-green-300 shadow-lg 
+                        shadow-green-500/50 text-white font-bold text-center
+                       flex items-center justify-center 
+                       hover:bg-black hover:text-white
+                        xl:w-45 xl:h-13 xl:text-[24px] xl:font-bold xl:-ml-15
+                         lg:w-35 lg:text-[20px] lg:font-bold lg:mr-30" href="../html/product.html">
+                    Shopping
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <!-- Hero Section -->
+            <section class="relative bg-gradient-to-br from-blue-50 via-green-50 to-blue-100 py-20 overflow-hidden">
+                <!-- Decorative Sports Icons -->
+                <div class="absolute left-10 top-10 opacity-20 text-8xl">⚽️</div>
+                <div class="absolute left-20 bottom-10 opacity-20 text-6xl">🏀</div>
+                <div class="absolute right-20 top-10 opacity-20 text-7xl">🎾</div>
+                <div class="absolute right-10 bottom-20 opacity-20 text-5xl">🏐</div>
+
+                <!-- Hero Content -->
+                <div class="container mx-auto px-4 text-center relative z-10">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">
+                        <span class="text-blue-600">We're here to help you choose the </span>
+                        <span class="text-orange-500">right gear for your sport</span>
+                    </h1>
+                    <p class="text-2xl md:text-3xl text-gray-700 font-medium">Feel free to contact us anytime.</p>
+                </div>
+            </section>
+
+            <!-- Get In Touch Section -->
+            <section class="container mx-auto px-4 py-12">
+                <div class="bg-green-400 text-white text-center py-6 rounded-t-3xl">
+                    <h2 class="text-4xl font-bold">Get In Touch</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                    <!-- Contact Information -->
+                    <div class="space-y-6 w-220">
+                        <!-- Phone -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg p-6 flex items-center gap-6 hover:shadow-xl transition border-2 border-blue-200">
+                            <div
+                                class="bg-blue-400 text-white w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-phone text-3xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold text-gray-800">Phone</h3>
+                                <p class="text-xl text-gray-600">+856-555-8741</p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div
+                            class="bg-white rounded-2xl shadow-lg p-6 flex items-center gap-6 hover:shadow-xl transition border-2 border-blue-200">
+                            <div
+                                class="bg-blue-400 text-white w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-envelope text-3xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold text-gray-800">Email</h3>
+                                <p class="text-xl text-gray-600">Sport@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="hover:cursor-pointer bg-white rounded-2xl shadow-lg p-6 border-2 border-blue-200">
+                            <h3 class="text-2xl font-semibold text-gray-800 mb-6">Social Media</h3>
+                            <div class=" grid grid-cols-2 gap-4 social-media">
+                                <!-- Facebook -->
+                                <a href="https://web.facebook.com/istad.co/?_rdc=1&_rdr#"
+                                    class="flex items-center gap-3 p-4 border-2 border-gray-300 rounded-xl hover:border-blue-400 transition">
+                                    <i class="fa-brands fa-facebook text-3xl text-blue-600"></i>
+                                    <span class="text-xl font-medium">Facebook</span>
+                                </a>
+
+                                <!-- Instagram -->
+                                <a href="https://www.tiktok.com/@istad369"
+                                    class="flex items-center gap-3 p-4 border-2 border-gray-300 rounded-xl hover:border-pink-400 transition">
+                                    <i class="fa-brands fa-tiktok text-3xl text-pink-600"></i>
+                                    <span class="text-xl font-medium">Tiktok</span>
+                                </a>
+
+                                <!-- Telegram -->
+                                <a href="https://t.me/istadckh"
+                                    class="flex items-center gap-3 p-4 border-2 border-gray-300 rounded-xl hover:border-blue-400 transition">
+                                    <i class="fa-brands fa-telegram text-3xl text-blue-500"></i>
+                                    <span class="text-xl font-medium">Telegram</span>
+                                </a>
+
+
+                                <!-- YouTube -->
+                                <a href="https://www.youtube.com/@istad7665"
+                                    class="flex items-center gap-3 p-4 border-2 border-gray-300 rounded-xl hover:border-red-400 transition">
+                                    <i class="fa-brands fa-youtube text-3xl text-red-600"></i>
+                                    <span class="text-xl font-medium">YouTube</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Customer Support Image -->
+                    <div class="w-150 ml-33.5 rounded-2xl shadow-lg overflow-hidden border-2 border-blue-200 ">
+                        <img src="../src/assets/images/feamale_calling.png" alt="Customer Support" class="w-150 h-133">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Google Map Section -->
+            <section class="container mx-auto px-4 py-12">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-white">
+                    <div class="bg-green-400 text-white text-center py-6">
+                        <h2 class="text-4xl font-bold">Google Map</h2>
+                    </div>
+                    <iframe class="w-full h-96" loading="lazy"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.739504681462!2d104.91612!3d11.56258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109513dc76fd6f1%3A0x9cbb7d5c6d0b6d8e!2sPhnom%20Penh!5e0!3m2!1sen!2skh!4v1700000000000">
+                    </iframe>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- footer  -->
+    <footer class="bg-sky-400 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 text-center lg:text-left">
+
+                <!-- Organized by -->
+                <div>
+                    <h3 class="font-semibold text-2xl lg:text-3xl mb-4 ">Organized by</h3>
+                    <a href="https://www.cstad.edu.kh/about-us">
+                        <img src="../src/assets/images/istad-logo.png" alt="ISTAD"
+                            class="w-20 h-20 xl:w-40 xl:h-40 mx-auto lg:mx-0 mb-4 hover:scale-105 transition-transform">
+                    </a>
+                    <p class="text-base lg:text-lg">
+                        Institute of Science and Technology<br>
+                        Advanced Development
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h3 class="font-semibold text-2xl lg:text-3xl mb-4">Navigation</h3>
+                    <ul class="space-y-2 text-base lg:text-lg">
+                        <li class="hover:text-green-300 cursor-pointer transition-colors">Home</li>
+                        <li class="hover:text-green-300 cursor-pointer transition-colors">Products</li>
+                        <li class="hover:text-green-300 cursor-pointer transition-colors">About</li>
+                        <li class="hover:text-green-300 cursor-pointer transition-colors">Contact</li>
+                    </ul>
+                </div>
+
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="font-semibold text-2xl lg:text-3xl mb-4">Contact</h3>
+                    <ul class="space-y-3">
+                        <a href="mailto:chhornseavleng1223@gmail.com">
+                            <li
+                                class="flex items-center gap-3 justify-center lg:justify-start hover:text-green-300 transition-colors cursor-pointer">
+                                <span
+                                    class="border-2 border-green-500 p-2 rounded-md flex items-center justify-center w-10 h-10">
+                                    <i class="fa-solid fa-envelope text-xl text-green-200"></i>
+                                </span>
+                                <span class="text-base lg:text-lg">Email</span>
+                            </li>
+                        </a>
+                        <li
+                            class="flex items-center gap-3 justify-center lg:justify-start hover:text-green-300 transition-colors cursor-pointer">
+                            <span
+                                class="border-2 border-green-500 p-2 rounded-md flex items-center justify-center w-10 h-10">
+                                <i class="fa-solid fa-phone text-xl text-green-200"></i>
+                            </span>
+                            <span class="text-base lg:text-lg">Phone</span>
+                        </li>
+                        <li
+                            class="flex items-center gap-3 justify-center lg:justify-start hover:text-green-300 transition-colors cursor-pointer">
+                            <span
+                                class="border-2 border-green-500 p-2 rounded-md flex items-center justify-center w-10 h-10">
+                                <i class="fa-solid fa-location-dot text-xl text-green-200"></i>
+                            </span>
+                            <span class="text-base lg:text-lg">Address</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Brand -->
+                <div class="flex flex-col items-center lg:items-start ">
+                    <img src="../src/assets/images/image.png" alt="Sport Shop"
+                        class="w-24 h-24 lg:w-32 lg:h-32 rounded-full mb-4 object-cover">
+                    <p class="text-base lg:text-lg leading-relaxed max-w-xs">
+                        All Sport gear in one place.
+                    </p>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h3 class="font-semibold text-2xl lg:text-3xl mb-4">Social Media</h3>
+                    <div class="flex gap-3 justify-center lg:justify-start flex-wrap">
+                        <div class="border-2 border-blue-500 p-2 rounded-lg  transition-all cursor-pointer">
+                            <i class="fa-brands fa-facebook-f text-xl text-white"></i>
+                        </div>
+                        <div
+                            class="border-2 border-blue-500 p-2 rounded-lg hover:bg-green-500 transition-all cursor-pointer">
+                            <i class="fa-brands fa-youtube text-xl text-white"></i>
+                        </div>
+                        <div
+                            class="border-2 border-blue-500 p-2 rounded-lg hover:bg-green-500 transition-all cursor-pointer">
+                            <i class="fa-brands fa-telegram text-xl text-white"></i>
+                        </div>
+                        <div
+                            class="border-2 border-blue-500 p-2 rounded-lg hover:bg-green-500 transition-all cursor-pointer">
+                            <i class="fa-brands fa-instagram text-xl text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center mt-10 text-base lg:text-lg">
+                <p>© <span id="year"></span> SportShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!-- script -->
+    <script src="../js/dark_mode.js"></script>
+    <!-- //dropdown products -->
+    <script src="../js/category.js"></script>
+</body>
+
+</html>

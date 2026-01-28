@@ -1,0 +1,72 @@
+/* ===== DARK MODE CSS ===== */
+
+.dark body {
+  background-color: #374151; /* gray-700 */
+  color: white;
+}
+
+.dark header {
+  background-color: #1f2937;
+}
+
+.dark footer {
+  background-color: #111827;
+}
+
+.dark a {
+  color: white;
+}
+
+.dark select {
+  background-color: #1f2937;
+  color: white;
+}
+
+.dark .footer-contact li:hover {
+  color: blue;
+}
+
+/* .dark .social-media a{
+  color: black;
+} */
+
+.dark .bg-white {
+  background-color: #1f2937; /* dark gray card */
+  color: #f9fafb;
+}
+
+.dark .bg-green-100 {
+  background-color: #064e3b; /* dark green */
+}
+
+.dark .bg-blue-400 {
+  background-color: #1e3a8a; /* dark blue */
+}
+
+.dark body {
+  background-color: #020617; /* very dark */
+  color: #e5e7eb; /* light text */
+}
+
+.dark header {
+  background-color: #020617;
+}
+
+.dark main {
+  background-color: #020617;
+}
+
+.dark section {
+  background-color: #020617;
+}
+
+.dark h1,
+.dark h2,
+.dark h3 {
+  color: #f9fafb;
+}
+
+.dark p {
+  color: #d1d5db;
+}
+
