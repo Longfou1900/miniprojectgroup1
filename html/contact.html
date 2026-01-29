@@ -16,7 +16,7 @@
 
 <body>
     <!-- //full of header -->
-    <header class="h-14 bg-blue-300 font-bold w-full flex justify-center  items-center 
+   <header class="h-14 bg-blue-300 font-bold w-full flex justify-center  items-center 
                     xl:h-28 xl:
                     lg:h-26
                     md:
@@ -33,7 +33,7 @@
 
         <!-- navbar -->
         <div class="w-full gap-2 -mr-3 h-auto text-[9px] items-center text-white flex justify-center 
-                xl:pr-10 2xl:w-115 2xl:h-12.5 2xl:text-[30px] 2xl:ml-110 2xl:gap-13 2xl:
+                xl:pr-10 2xl:w-115 2xl:h-12.5 2xl:text-[30px] xl:-ml-90 xl:
                 lg:pr-0 lg:w-115 lg:h-12.5 lg:text-[25px] lg:ml-40 lg:gap-5 
                 md:pr-0 md:w-115 md:h-12.5 md:text-[15px] md:ml-50 md:gap-1 md: 
                 sm:pr-0 sm:w-115 sm:h-12.5 sm:text-[10px] sm:ml-50 sm:gap-1 sm: ">
@@ -48,12 +48,12 @@
 
             <!-- Category Dropdown -->
             <div class="h-full flex items-center justify-center 
-                        xl:-ml-15 
+                        xl:-ml-5 
                         lg: lg:h-28 lg:w-150 
                         md: 
                         sm: sm:text-[1px] sm:w-15">
                 <select onchange="goToPage(this)" class="w-13 font-normal 
-                       p-1 border rounded-2xl -mr-3 xl:w-50 xl:h-12 xl:text-[24px]
+                       p-1 border rounded-2xl -mr-[10px] xl:w-50 xl:h-12 xl:text-[24px]
                        focus:outline-none focus:ring-2 focus:ring-blue-300
                        text-white text-[8px] lg:-ml-65
                        cursor-pointer shadow-lg shadow-green-500/50
@@ -72,7 +72,7 @@
             <!-- dark mode -->
             <div class=" flex items-center justify-center lg:-ml-40">
                 <button class="flex justify-center items-center -mr-4 w-5 h-5 rounded-[14px]
-                xl:-ml-65 xl:w-14 xl:h-14 xl:rounded-[30px] hover:border hover:border-white" onclick="toggle()">
+                xl:-ml-55 xl:w-14 xl:h-14 xl:rounded-[30px] hover:border hover:border-white" onclick="toggle()">
                     <img id="themeIcon" class="flex justify-center items-center xl:w-11 xl:h-11 w-3 h-3 cursor-pointer invert brightness-0 
                                                 " src="../src/assets/icons/night.png" alt="">
                 </button>
