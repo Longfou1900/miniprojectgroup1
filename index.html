@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- dark mode icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 <!-- //Responsive for screen width 2560px, 1440px, 375px-->
@@ -33,7 +35,7 @@
 
         <!-- navbar -->
         <div class="w-full gap-2  h-auto text-[9px] items-center text-white flex justify-center 
-                xl:pr-10 2xl:w-115 2xl:h-12.5 2xl:text-[30px] 2xl:ml-110 2xl:gap-13 2xl:
+                xl:pr-10 2xl:w-115 2xl:h-12.5 2xl:text-[30px] 2xl:ml-85 2xl:gap-13 2xl:
                 lg:pr-0 lg:w-115 lg:h-12.5 lg:text-[25px] lg:ml-40 lg:gap-5 
                 md:pr-0 md:w-115 md:h-12.5 md:text-[15px] md:ml-50 md:gap-1 md: 
                 sm:pr-0 sm:w-115 sm:h-12.5 sm:text-[10px] sm:ml-50 sm:gap-1 sm: ">
@@ -72,9 +74,10 @@
             <!-- dark mode -->
             <div class=" flex items-center justify-center lg:-ml-40">
                 <button class="flex justify-center items-center -mr-4 w-5 h-5 rounded-[14px]
-                xl:-ml-65 xl:w-14 xl:h-14 xl:rounded-[30px] hover:border hover:border-white" onclick="toggle()">
-                    <img id="themeIcon" class="flex justify-center items-center xl:w-11 xl:h-11 w-3 h-3 cursor-pointer invert brightness-0 
-                                                " src="./src/assets/icons/night.png" alt="">
+                xl:-ml-65 xl:w-14 xl:h-14 xl:rounded-[30px] hover:border hover:border-white" onclick="toggle01()">
+                    <i id="themeIcon"
+                        class="fa-regular fa-moon text-white text-sm xl:text-3xl cursor-pointer transition-all duration-300 ">
+                    </i>
                 </button>
             </div>
 
@@ -359,7 +362,7 @@
     <footer class="bg-sky-400 text-white xl:h-110 xl:mt-49 py-10">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 text-center lg:text-left">
-                
+
                 <!-- Organized by -->
                 <div>
                     <h3 class="font-semibold text-2xl lg:text-3xl mb-4 ">Organized by</h3>
@@ -390,21 +393,27 @@
                     <h3 class="font-semibold text-2xl lg:text-3xl mb-4">Contact</h3>
                     <ul class="space-y-3">
                         <a href="mailto:chhornseavleng1223@gmail.com">
-                            <li class="flex items-center gap-3 justify-center lg:justify-start hover:text-green-300 transition-colors cursor-pointer">
-                                <span class="border-2 border-green-500 p-2 rounded-md flex items-center justify-center w-10 h-10">
+                            <li
+                                class="flex items-center gap-3 justify-center lg:justify-start hover:text-green-300 transition-colors cursor-pointer">
+                                <span
+                                    class="border-2 border-green-500 p-2 rounded-md flex items-center justify-center w-10 h-10">
                                     <i class="fa-solid fa-envelope text-xl text-green-200"></i>
                                 </span>
                                 <span class="text-base lg:text-lg">Email</span>
                             </li>
                         </a>
-                        <li class="flex items-center gap-3 justify-center lg:justify-start hover:text-green-300 transition-colors cursor-pointer">
-                            <span class="border-2 border-green-500 p-2 rounded-md flex items-center justify-center w-10 h-10">
+                        <li
+                            class="flex items-center gap-3 justify-center lg:justify-start hover:text-green-300 transition-colors cursor-pointer">
+                            <span
+                                class="border-2 border-green-500 p-2 rounded-md flex items-center justify-center w-10 h-10">
                                 <i class="fa-solid fa-phone text-xl text-green-200"></i>
                             </span>
                             <span class="text-base lg:text-lg">Phone</span>
                         </li>
-                        <li class="flex items-center gap-3 justify-center lg:justify-start hover:text-green-300 transition-colors cursor-pointer">
-                            <span class="border-2 border-green-500 p-2 rounded-md flex items-center justify-center w-10 h-10">
+                        <li
+                            class="flex items-center gap-3 justify-center lg:justify-start hover:text-green-300 transition-colors cursor-pointer">
+                            <span
+                                class="border-2 border-green-500 p-2 rounded-md flex items-center justify-center w-10 h-10">
                                 <i class="fa-solid fa-location-dot text-xl text-green-200"></i>
                             </span>
                             <span class="text-base lg:text-lg">Address</span>
@@ -414,8 +423,8 @@
 
                 <!-- Brand -->
                 <div class="flex flex-col items-center lg:items-start ">
-                    <img src="../src/assets/images/image.png" alt="Sport Shop" 
-                         class="w-24 h-24 lg:w-32 lg:h-32 rounded-full mb-4 object-cover">
+                    <img src="../src/assets/images/image.png" alt="Sport Shop"
+                        class="w-24 h-24 lg:w-32 lg:h-32 rounded-full mb-4 object-cover">
                     <p class="text-base lg:text-lg leading-relaxed max-w-xs">
                         All Sport gear in one place.
                     </p>
@@ -428,13 +437,16 @@
                         <div class="border-2 border-blue-500 p-2 rounded-lg  transition-all cursor-pointer">
                             <i class="fa-brands fa-facebook-f text-xl text-white"></i>
                         </div>
-                        <div class="border-2 border-blue-500 p-2 rounded-lg hover:bg-green-500 transition-all cursor-pointer">
+                        <div
+                            class="border-2 border-blue-500 p-2 rounded-lg hover:bg-green-500 transition-all cursor-pointer">
                             <i class="fa-brands fa-youtube text-xl text-white"></i>
                         </div>
-                        <div class="border-2 border-blue-500 p-2 rounded-lg hover:bg-green-500 transition-all cursor-pointer">
+                        <div
+                            class="border-2 border-blue-500 p-2 rounded-lg hover:bg-green-500 transition-all cursor-pointer">
                             <i class="fa-brands fa-telegram text-xl text-white"></i>
                         </div>
-                        <div class="border-2 border-blue-500 p-2 rounded-lg hover:bg-green-500 transition-all cursor-pointer">
+                        <div
+                            class="border-2 border-blue-500 p-2 rounded-lg hover:bg-green-500 transition-all cursor-pointer">
                             <i class="fa-brands fa-instagram text-xl text-white"></i>
                         </div>
                     </div>
@@ -449,6 +461,7 @@
     </footer>
     <!-- script -->
     <script src="./js/dark_mode.js"></script>
+    <script src="./js/dark_mode01.js"></script>
     <!-- //dropdown products -->
     <script src="./js/category.js"></script>
     <!-- //animation  -->
