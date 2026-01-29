@@ -2486,6 +2486,11 @@
       order: 0;
     }
   }
+  .md\:m-0 {
+    @media (width >= 48rem) {
+      margin: calc(var(--spacing) * 0);
+    }
+  }
   .md\:m-1 {
     @media (width >= 48rem) {
       margin: calc(var(--spacing) * 1);
@@ -2531,6 +2536,16 @@
       margin-top: calc(var(--spacing) * 150);
     }
   }
+  .md\:mr-0 {
+    @media (width >= 48rem) {
+      margin-right: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:mr-20 {
+    @media (width >= 48rem) {
+      margin-right: calc(var(--spacing) * 20);
+    }
+  }
   .md\:mb-0 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 0);
@@ -2554,6 +2569,11 @@
   .md\:mb-50 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 50);
+    }
+  }
+  .md\:ml-0 {
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * 0);
     }
   }
   .md\:ml-1 {
@@ -2676,9 +2696,19 @@
       height: 100%;
     }
   }
+  .md\:w-1 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 1);
+    }
+  }
   .md\:w-1\/2 {
     @media (width >= 48rem) {
       width: calc(1/2 * 100%);
+    }
+  }
+  .md\:w-10 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 10);
     }
   }
   .md\:w-12 {
@@ -2696,9 +2726,19 @@
       width: calc(var(--spacing) * 16);
     }
   }
+  .md\:w-20 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 20);
+    }
+  }
   .md\:w-50 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 50);
+    }
+  }
+  .md\:w-100 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 100);
     }
   }
   .md\:w-115 {
@@ -2711,6 +2751,11 @@
       width: calc(var(--spacing) * 150);
     }
   }
+  .md\:w-200 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 200);
+    }
+  }
   .md\:w-250 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 250);
@@ -2719,6 +2764,11 @@
   .md\:w-450 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 450);
+    }
+  }
+  .md\:w-auto {
+    @media (width >= 48rem) {
+      width: auto;
     }
   }
   .md\:w-full {
