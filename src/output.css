@@ -434,6 +434,15 @@
   .table {
     display: table;
   }
+  .h-0 {
+    height: calc(var(--spacing) * 0);
+  }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
@@ -445,6 +454,9 @@
   }
   .h-8 {
     height: calc(var(--spacing) * 8);
+  }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
   }
   .h-10 {
     height: calc(var(--spacing) * 10);
@@ -485,8 +497,17 @@
   .h-64 {
     height: calc(var(--spacing) * 64);
   }
+  .h-90 {
+    height: calc(var(--spacing) * 90);
+  }
   .h-96 {
     height: calc(var(--spacing) * 96);
+  }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
+  .h-130 {
+    height: calc(var(--spacing) * 130);
   }
   .h-133 {
     height: calc(var(--spacing) * 133);
@@ -499,6 +520,9 @@
   }
   .h-157\.5 {
     height: calc(var(--spacing) * 157.5);
+  }
+  .h-250 {
+    height: calc(var(--spacing) * 250);
   }
   .h-348 {
     height: calc(var(--spacing) * 348);
@@ -572,6 +596,9 @@
   .w-24 {
     width: calc(var(--spacing) * 24);
   }
+  .w-30 {
+    width: calc(var(--spacing) * 30);
+  }
   .w-150 {
     width: calc(var(--spacing) * 150);
   }
@@ -580,6 +607,15 @@
   }
   .w-220 {
     width: calc(var(--spacing) * 220);
+  }
+  .w-250 {
+    width: calc(var(--spacing) * 250);
+  }
+  .w-310 {
+    width: calc(var(--spacing) * 310);
+  }
+  .w-350 {
+    width: calc(var(--spacing) * 350);
   }
   .w-\[90\%\] {
     width: 90%;
@@ -1504,10 +1540,22 @@
       --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-green-500) 50%, transparent) var(--tw-shadow-alpha), transparent);
     }
   }
+  .shadow-lime-500 {
+    --tw-shadow-color: oklch(76.8% 0.233 130.85);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, var(--color-lime-500) var(--tw-shadow-alpha), transparent);
+    }
+  }
   .shadow-lime-500\/50 {
     --tw-shadow-color: color-mix(in srgb, oklch(76.8% 0.233 130.85) 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-lime-500) 50%, transparent) var(--tw-shadow-alpha), transparent);
+    }
+  }
+  .shadow-white {
+    --tw-shadow-color: #fff;
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-shadow-color: color-mix(in oklab, var(--color-white) var(--tw-shadow-alpha), transparent);
     }
   }
   .shadow-white\/50 {
