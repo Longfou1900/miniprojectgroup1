@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Sports</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <!-- Header -->
+    <header class="bg-blue-500 h-20 flex items-center justify-center sticky top-0 z-50 shadow-lg">
+        <select onchange="goToSection(this.value)" class="px-4 py-2 rounded-lg text-black font-semibold hover:bg-blue-600 transition">
+            <option selected disabled>Select Sport</option>
+            <option value="basketball">Basketball</option>
+            <option value="football">Football</option>
+            <option value="tennis">Tennis</option>
+            <option value="cycling">Cycling</option>
+            <option value="swimming">Swimming</option>
+            <option value="fitness">Fitness & Gym</option>
+        </select>
+    </header>
+    <main class="max-w-7xl mx-auto p-6 md:p-10 space-y-24">
+        <!-- ===== Basketball ===== -->
+        <section id="basketball">
+            <h2 class="text-4xl font-bold text-green-500 mb-2">Basketball</h2>
+            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">Fast-paced team sport that improves endurance, coordination, and teamwork.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <!-- Product Card 1 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/basketball.png" alt="Basketball Pro Ball" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Basketball Pro Ball</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">High grip indoor/outdoor ball</p>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/shoes.png" alt="Basketball Shoes" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Basketball Shoes</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Strong ankle support</p>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/basketball.png" alt="Basketball Jersey" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Basketball Jersey</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Breathable athletic wear</p>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/basketball.png" alt="Basketball Bag" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Basketball Bag</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Professional storage bag</p>
+                    </div>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/basketball.png" alt="Basketball Hoop" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Basketball Hoop</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Indoor/outdoor hoop</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== Football ===== -->
+        <section id="football">
+            <h2 class="text-4xl font-bold text-green-500 mb-2">Football</h2>
+            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">World's most popular sport, great for stamina and teamwork.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <!-- Product Card 1 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-red-600/10 to-red-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/football.png" alt="Football Match Ball" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Football Match Ball</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">FIFA standard quality</p>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-red-600/10 to-red-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/boot.png" alt="Football Boots" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Football Boots</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Perfect grip on grass</p>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-red-600/10 to-red-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/football.png" alt="Football Socks" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Football Socks</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Moisture-wicking fabric</p>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-red-600/10 to-red-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/boot.png" alt="Football Shin Guards" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Football Shin Guards</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Protection & comfort</p>
+                    </div>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-red-600/10 to-red-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/football.png" alt="Football Jersey" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Football Jersey</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Professional team wear</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===== Tennis ===== -->
+        <section id="tennis">
+            <h2 class="text-4xl font-bold text-green-500 mb-2">Tennis</h2>
+            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">Improves reflexes, balance, and coordination.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <!-- Product Card 1 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-yellow-600/10 to-yellow-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/tennis.png" alt="Tennis Racket" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Tennis Racket</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Lightweight carbon frame</p>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-yellow-600/10 to-yellow-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/tennis.png" alt="Tennis Balls" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Tennis Balls</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Professional grade set</p>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-yellow-600/10 to-yellow-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/tennis.png" alt="Tennis Shoes" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Tennis Shoes</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Court-specific grip</p>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-yellow-600/10 to-yellow-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/tennis.png" alt="Tennis Bag" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Tennis Bag</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Racket storage & organization</p>
+                    </div>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-yellow-600/10 to-yellow-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/tennis.png" alt="Wristband" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Wristband</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Moisture-absorbing protection</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Cycling ===== -->
+        <section id="cycling">
+            <h2 class="text-4xl font-bold text-green-500 mb-2">Cycling</h2>
+            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">Excellent for cardio and leg strength.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <!-- Product Card 1 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-orange-600/10 to-orange-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/cycling.png" alt="Mountain Bike Helmet" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Mountain Bike Helmet</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Strong & lightweight</p>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-orange-600/10 to-orange-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/cycling.png" alt="Bike Lock" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Bike Lock</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Heavy-duty security</p>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-orange-600/10 to-orange-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/cycling.png" alt="Bike Lights" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Bike Lights</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Front & rear LED set</p>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-orange-600/10 to-orange-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/cycling.png" alt="Bike Gloves" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Bike Gloves</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Padded grip comfort</p>
+                    </div>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-orange-600/10 to-orange-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/cycling.png" alt="Bike Pump" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Bike Pump</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Portable & portable</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Swimming ===== -->
+        <section id="swimming">
+            <h2 class="text-4xl font-bold text-green-500 mb-2">Swimming</h2>
+            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">Full-body workout and low impact exercise.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <!-- Product Card 1 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-cyan-600/10 to-cyan-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/swimming.png" alt="Swimming Goggles" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Swimming Goggles</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Anti-fog UV protection</p>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-cyan-600/10 to-cyan-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/swimming.png" alt="Swimming Cap" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Swimming Cap</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Water-resistant silicone</p>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-cyan-600/10 to-cyan-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/swimming.png" alt="Swim Fins" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Swim Fins</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Professional training grade</p>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-cyan-600/10 to-cyan-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/swimming.png" alt="Swim Kickboard" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Swim Kickboard</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Buoyant training tool</p>
+                    </div>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-cyan-600/10 to-cyan-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/swimming.png" alt="Swim Towel" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Swim Towel</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Quick-dry microfiber</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Fitness & Gym ===== -->
+        <section id="fitness">
+            <h2 class="text-4xl font-bold text-green-500 mb-2">Fitness & Gym</h2>
+            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">Build strength, endurance, and flexibility.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <!-- Product Card 1 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-purple-600/10 to-purple-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/dumbbell.png" alt="Dumbbell Set" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Dumbbell Set</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Adjustable weights</p>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-purple-600/10 to-purple-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/dumbbell.png" alt="Yoga Mat" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Yoga Mat</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Non-slip surface</p>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-purple-600/10 to-purple-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/dumbbell.png" alt="Resistance Bands" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Resistance Bands</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Set of 5 resistance levels</p>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-purple-600/10 to-purple-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/dumbbell.png" alt="Kettlebell" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Kettlebell</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">16kg iron construction</p>
+                    </div>
+                </div>
+                <!-- Product Card 5 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div class="bg-gradient-to-b from-purple-600/10 to-purple-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/dumbbell.png" alt="Pull-up Bar" class="h-full w-full object-contain drop-shadow-lg" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Pull-up Bar</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Doorway installation</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function goToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>
