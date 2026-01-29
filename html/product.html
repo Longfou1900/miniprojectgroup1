@@ -84,552 +84,384 @@
     </header>
 
     <main>
-        <div class="">
-            <div class="relative">
-                <img class="w-full h-130 object-cover" src="../src/assets/images/pro.jpg" alt="Banner1" />
+    <div class="">
+        <!-- Banner Section - Responsive -->
+        <div class="relative">
+            <img class="w-full h-40 sm:h-60 md:h-96 lg:h-[520px] object-cover" src="../src/assets/images/pro.jpg" alt="Banner1" />
 
-                <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
-                    <h1 class="text-7xl text-white font-bold">High-Performance Sports Products</h1>
-                    <h1 class="text-7xl text-green-500 font-bold">Find quality gear designed for</h1>
-                    <h1 class="text-7xl text-yellow-500 font-bold">comfort, and performance.</h1>
-                </div>
+            <!-- Banner Text - Responsive -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+                <h1 class="text-2xl sm:text-3xl md:text-5xl lg:text-7xl text-white font-bold">High-Performance Sports Products</h1>
+                <h1 class="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-green-500 font-bold mt-2 sm:mt-4">Find quality gear designed for</h1>
+                <h1 class="text-xl sm:text-2xl md:text-4xl lg:text-7xl text-yellow-500 font-bold mt-2 sm:mt-4">comfort, and performance.</h1>
             </div>
-            <!--Text-Bar -->
-            <div class="bg-green-500 p-5 ml-30 mr-30 mt-20">
-                <h1 class="text-4xl text-center text-white">PRODUCT TRANNING NOW</h1>
-            </div>
+        </div>
 
-            <!-- Traning Product  -->
+        <!-- Text Bar 1 - Responsive -->
+        <div class="bg-green-500 p-3 sm:p-4 md:p-5 mx-4 sm:mx-6 md:mx-8 lg:mx-30 mt-10 sm:mt-16 md:mt-20">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl text-center text-white">PRODUCT TRAINING NOW</h1>
+        </div>
 
-            <div class="grid grid-cols-4 ml-30 mr-30 mt-10 gap-10 ">
-                <!-- Product Cards 1-->
-                <div class="w-[285px] h-[510px] bg-white rounded-2xl p-1 relative">
-                    <img class="w-[262.91px] h-[322.89px] object-cover rounded-2xl m-1.5"
-                        src="../src/assets/images/roundHead.png" alt="roundHead">
-                    <div class=""><i
-                            class="fa-regular fa-heart absolute inset-0 text-2xl ml-59 mt-5 text-sky-500 bg-white h-8  w-8 p-1 rounded-2xl cursor-pointer heart"></i>
-                    </div>
-                    <div class="m-1.5 flex justify-between mt-5">
-                        <h3>Round-Head</h3>
-                        <p>2
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                        </p>
-                    </div>
-                    <div class="m-1.5 mt-5">
-                        <p class="text-black">25$ <del class="text-gray-400">30$</del><span class="text-sky-500">(15%
-                                off)</span></p>
-                    </div>
-                    <button onclick="addToCart({
-                            id: 1,
-                            name: 'Round-Head',
-                            price: 25,
-                            image: '../src/assets/images/roundHead.png'
-                        })" class="bg-green-500 h-[49.48px] w-[262.91px] m-1.5 rounded-xl text-white mt-5">
-                        ADD TO CART
-                    </button>
+        <!-- Product Grid 1 - Responsive -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-4 sm:mx-6 md:mx-8 lg:mx-30 mt-8 sm:mt-12 md:mt-20 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
+            <!-- Product Card 1 -->
+            <div class="w-full bg-white rounded-2xl p-1 relative max-w-xs mx-auto sm:max-w-full">
+                <img class="w-full h-64 sm:h-72 md:h-80 object-cover rounded-2xl m-1.5"
+                    src="../src/assets/images/roundHead.png" alt="roundHead">
+                <div class="">
+                    <i class="fa-regular fa-heart absolute inset-0 text-xl sm:text-2xl ml-56 sm:ml-48 md:ml-56 mt-4 text-sky-500 bg-white h-8 w-8 p-1 rounded-2xl cursor-pointer heart"></i>
                 </div>
-                <!-- Product Cards 2-->
-                <div class="w-[285px] h-[510px] bg-white  rounded-2xl p-1 relative">
-                    <img class="w-[262.91px] h-[322.89px] object-cover rounded-2xl m-1.5"
-                        src="../src/assets/images/soccerBall.png" alt="roundHead">
-                    <div class=""><i
-                            class="fa-regular fa-heart absolute heart inset-0 text-2xl ml-59 mt-5 text-sky-500 bg-white h-8  w-8 p-1 rounded-2xl"></i>
-                    </div>
-                    <div class="m-1.5 flex justify-between mt-5">
-                        <h3>Soccer-Ball</h3>
-                        <p>3
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                        </p>
-                    </div>
-                    <div class="m-1.5 mt-5">
-                        <p class="text-black">15$ <del class="text-gray-400">20$</del><span class="text-sky-500">(15%
-                                off)</span></p>
-                    </div>
-                    <button onclick="addToCart({
-                            id: 2,
-                            name: 'Soccer-Ball',
-                            price: 15,
-                            image: '../src/assets/images/soccerBall.png'
-                        })" class="bg-green-500 h-[49.48px] w-[262.91px] m-1.5 rounded-xl text-white mt-5">
-                        ADD TO CART
-                    </button>
+                <div class="m-1.5 flex justify-between mt-5 text-sm sm:text-base">
+                    <h3>Round-Head</h3>
+                    <p>2
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                    </p>
                 </div>
-                <!-- Product Cards 3-->
-                <div class="w-[285px] h-[510px] bg-white  rounded-2xl p-1 relative">
-                    <img class="w-[262.91px] h-[322.89px] object-cover rounded-2xl m-1.5"
-                        src="../src/assets/images/golfPutter.png" alt="roundHead">
-                    <div class=""><i
-                            class="fa-regular fa-heart heart absolute inset-0 text-2xl ml-59 mt-5 text-sky-500 bg-white h-8  w-8 p-1 rounded-2xl"></i>
-                    </div>
-                    <div class="m-1.5 flex justify-between mt-5">
-                        <h3>Golf-putter</h3>
-                        <p>4
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                        </p>
-                    </div>
-                    <div class="m-1.5 mt-5">
-                        <p class="text-black">68$ <del class="text-gray-400">80$</del><span class="text-sky-500">(15%
-                                off)</span></p>
-                    </div>
-                    <button onclick="addToCart({
-                            id: 3,
-                            name: 'Golf-putter',
-                            price: 68,
-                            image: '../src/assets/images/golfPutter.png'
-                        })" class="bg-green-500 h-[49.48px] w-[262.91px] m-1.5 rounded-xl text-white mt-5">
-                        ADD TO CART
-                    </button>
+                <div class="m-1.5 mt-5 text-sm sm:text-base">
+                    <p class="text-black">25$ <del class="text-gray-400">30$</del><span class="text-sky-500">(15% off)</span></p>
                 </div>
-                <!-- Product Cards 4-->
-                <div class="w-[285px] h-[510px] bg-white rounded-2xl p-1 relative">
-                    <img class="w-[262.91px] h-[322.89px] object-cover rounded-2xl m-1.5"
-                        src="../src/assets/images/rugbyBall.jpg" alt="roundHead">
-                    <div class=""><i
-                            class="fa-regular fa-heart heart absolute inset-0 text-2xl ml-59 mt-5 text-sky-500 bg-white h-8  w-8 p-1 rounded-2xl"></i>
-                    </div>
-                    <div class="m-1.5 flex justify-between mt-5">
-                        <h3>Ruby-Ball</h3>
-                        <p>4.5
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                        </p>
-                    </div>
-                    <div class="m-1.5 mt-5">
-                        <p class="text-black">30$ <del class="text-gray-400">35$</del><span class="text-sky-500">(15%
-                                off)</span></p>
-                    </div>
-                    <button onclick="addToCart({
-                        id: 4,
-                        name: 'Ruby-Ball',
-                        price: 30,
-                        image: '../src/assets/images/rugbyBall.jpg'
-                        })" class="bg-green-500 h-[49.48px] w-[262.91px] m-1.5 rounded-xl text-white mt-5">
-                        ADD TO CART
-                    </button>
-
-                </div>
+                <button onclick="addToCart({
+                    id: 1,
+                    name: 'Round-Head',
+                    price: 25,
+                    image: '../src/assets/images/roundHead.png'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                ADD TO CART
+                </button>
             </div>
 
-            <!-- Text-Bar 2 -->
-            <div class="bg-green-500 p-5 ml-30 mr-30 mt-20">
-                <h1 class="text-4xl text-center text-white">BEST SELLING </h1>
+            <!-- Product Card 2 -->
+            <div class="w-full bg-white rounded-2xl p-1 relative max-w-xs mx-auto sm:max-w-full">
+                <img class="w-full h-64 sm:h-72 md:h-80 object-cover rounded-2xl m-1.5"
+                    src="../src/assets/images/soccerBall.png" alt="soccerBall">
+                <div class="">
+                    <i class="fa-regular fa-heart absolute inset-0 text-xl sm:text-2xl ml-56 sm:ml-48 md:ml-56 mt-4 text-sky-500 bg-white h-8 w-8 p-1 rounded-2xl heart"></i>
+                </div>
+                <div class="m-1.5 flex justify-between mt-5 text-sm sm:text-base">
+                    <h3>Soccer-Ball</h3>
+                    <p>3
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                    </p>
+                </div>
+                <div class="m-1.5 mt-5 text-sm sm:text-base">
+                    <p class="text-black">15$ <del class="text-gray-400">20$</del><span class="text-sky-500">(15% off)</span></p>
+                </div>
+                <button onclick="addToCart({
+                    id: 2,
+                    name: 'Soccer-Ball',
+                    price: 15,
+                    image: '../src/assets/images/soccerBall.png'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                ADD TO CART
+                </button>
             </div>
 
-            <!-- product of The best selling -->
-
-            <div class="grid grid-cols-4 ml-30 mr-30 mt-10 gap-10 ">
-                <!-- Product Cards 1-->
-                <div class="w-[285px] h-[510px] bg-white rounded-2xl p-1 relative">
-                    <img class="w-[262.91px] h-[322.89px] object-cover rounded-2xl m-1.5"
-                        src="../src/assets/images/hexDummbleSet.png" alt="roundHead">
-                    <div class=""><i
-                            class="fa-regular fa-heart absolute inset-0 text-2xl ml-59 mt-5 text-sky-500 bg-white h-8  w-8 p-1 rounded-2xl cursor-pointer heart"></i>
-                    </div>
-                    <div class="m-1.5 flex justify-between mt-5">
-                        <h3>Dex-dummble-set</h3>
-                        <p>2
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                        </p>
-                    </div>
-                    <div class="m-1.5 mt-5">
-                        <p class="text-black">25$ <del class="text-gray-400">30$</del><span class="text-sky-500">(15%
-                                off)</span></p>
-                    </div>
-                    <button onclick="addToCart({
-                            id: 5,
-                            name: 'Dex-dummble-set',
-                            price: 25,
-                            image: '../src/assets/images/hexDummbleSet.png'
-                        })" class="bg-green-500 h-[49.48px] w-[262.91px] m-1.5 rounded-xl text-white mt-5">
-                        ADD TO CART
-                    </button>
+            <!-- Product Card 3 -->
+            <div class="w-full bg-white rounded-2xl p-1 relative max-w-xs mx-auto sm:max-w-full">
+                <img class="w-full h-64 sm:h-72 md:h-80 object-cover rounded-2xl m-1.5"
+                    src="../src/assets/images/golfPutter.png" alt="golfPutter">
+                <div class="">
+                    <i class="fa-regular fa-heart heart absolute inset-0 text-xl sm:text-2xl ml-56 sm:ml-48 md:ml-56 mt-4 text-sky-500 bg-white h-8 w-8 p-1 rounded-2xl"></i>
                 </div>
-                <!-- Product Cards 2-->
-                <div class="w-[285px] h-[510px] bg-white  rounded-2xl p-1 relative">
-                    <img class="w-[262.91px] h-[322.89px] object-cover rounded-2xl m-1.5"
-                        src="../src/assets/images/mountianbycycle.png" alt="roundHead">
-                    <div class=""><i
-                            class="fa-regular fa-heart absolute heart inset-0 text-2xl ml-59 mt-5 text-sky-500 bg-white h-8  w-8 p-1 rounded-2xl"></i>
-                    </div>
-                    <div class="m-1.5 flex justify-between mt-5">
-                        <h3>Mountian-Bicyle</h3>
-                        <p>3
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                        </p>
-                    </div>
-                    <div class="m-1.5 mt-5">
-                        <p class="text-black">150$ <del class="text-gray-400">180$</del><span class="text-sky-500">(15%
-                                off)</span></p>
-                    </div>
-                    <button onclick="addToCart({
-                            id: 6,
-                            name: 'Mountian-Bicyle',
-                            price: 150,
-                            image: '../src/assets/images/mountianbycycle.png'
-                        })" class="bg-green-500 h-[49.48px] w-[262.91px] m-1.5 rounded-xl text-white mt-5">
-                        ADD TO CART
-                    </button>
+                <div class="m-1.5 flex justify-between mt-5 text-sm sm:text-base">
+                    <h3>Golf-putter</h3>
+                    <p>4
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                    </p>
                 </div>
-                <!-- Product Cards 3-->
-                <div class="w-[285px] h-[510px] bg-white  rounded-2xl p-1 relative">
-                    <img class="w-[262.91px] h-[322.89px] object-cover rounded-2xl m-1.5"
-                        src="../src/assets/images/shoulderPad.png" alt="roundHead">
-                    <div class=""><i
-                            class="fa-regular fa-heart heart absolute inset-0 text-2xl ml-59 mt-5 text-sky-500 bg-white h-8  w-8 p-1 rounded-2xl"></i>
-                    </div>
-                    <div class="m-1.5 flex justify-between mt-5">
-                        <h3>shoulder-Pad</h3>
-                        <p>4
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                        </p>
-                    </div>
-                    <div class="m-1.5 mt-5">
-                        <p class="text-black">420 <del class="text-gray-400">450$</del><span class="text-sky-500">(15%
-                                off)</span></p>
-                    </div>
-                    <button onclick="addToCart({
-                            id: 7,
-                            name: 'shoulder-Pad',
-                            price: 420,
-                            image: '../src/assets/images/shoulderPad.png'
-                        })" class="bg-green-500 h-[49.48px] w-[262.91px] m-1.5 rounded-xl text-white mt-5">
-                        ADD TO CART
-                    </button>
+                <div class="m-1.5 mt-5 text-sm sm:text-base">
+                    <p class="text-black">68$ <del class="text-gray-400">80$</del><span class="text-sky-500">(15% off)</span></p>
                 </div>
-                <!-- Product Cards 4-->
-                <div class="w-[285px] h-[510px] bg-white rounded-2xl p-1 relative">
-                    <img class="w-[262.91px] h-[322.89px] object-cover rounded-2xl m-1.5"
-                        src="../src/assets/images/sportJacketGreen.png" alt="roundHead">
-                    <div class=""><i
-                            class="fa-regular fa-heart heart absolute inset-0 text-2xl ml-59 mt-5 text-sky-500 bg-white h-8  w-8 p-1 rounded-2xl"></i>
-                    </div>
-                    <div class="m-1.5 flex justify-between mt-5">
-                        <h3>Green Jacket</h3>
-                        <p>4.5
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                        </p>
-                    </div>
-                    <div class="m-1.5 mt-5">
-                        <p class="text-black">105$ <del class="text-gray-400">115$</del><span class="text-sky-500">(15%
-                                off)</span></p>
-                    </div>
-                    <button onclick="addToCart({
-                        id: 8,
-                        name: 'Green Jacket',
-                        price: 105,
-                        image: '../src/assets/images/sportJacketGreen.png'
-                        })" class="bg-green-500 h-[49.48px] w-[262.91px] m-1.5 rounded-xl text-white mt-5">
-                        ADD TO CART
-                    </button>
-                </div>
-            </div>
-            <div class="grid grid-cols-4 mr-30 ml-30 mt-10 gap-10 ">
-                <!-- Product Cards 5-->
-                <div class="w-[285px] h-[510px] bg-white rounded-2xl p-1 relative">
-                    <img class="w-[262.91px] h-[322.89px] object-cover rounded-2xl m-1.5"
-                        src="../src/assets/images/sportJersey.png" alt="roundHead">
-                    <div class=""><i
-                            class="fa-regular fa-heart absolute inset-0 text-2xl ml-59 mt-5 text-sky-500 bg-white h-8  w-8 p-1 rounded-2xl cursor-pointer heart"></i>
-                    </div>
-                    <div class="m-1.5 flex justify-between mt-5">
-                        <h3>Sport Jersey</h3>
-                        <p>2
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                        </p>
-                    </div>
-                    <div class="m-1.5 mt-5">
-                        <p class="text-black">25$ <del class="text-gray-400">30$</del><span class="text-sky-500">(15%
-                                off)</span></p>
-                    </div>
-                    <button onclick="addToCart({
-                            id: 9,
-                            name: 'Sport Jersey',
-                            price: 105,
-                            image: '../src/assets/images/sportJersey.png'
-                        })" class="bg-green-500 h-[49.48px] w-[262.91px] m-1.5 rounded-xl text-white mt-5">
-                        ADD TO CART
-                    </button>
-                </div>
-                <!-- Product Cards 6-->
-                <div class="w-[285px] h-[510px] bg-white  rounded-2xl p-1 relative">
-                    <img class="w-[262.91px] h-[322.89px] object-cover rounded-2xl m-1.5"
-                        src="../src/assets/images/basketball.png" alt="roundHead">
-                    <div class=""><i
-                            class="fa-regular fa-heart absolute heart inset-0 text-2xl ml-59 mt-5 text-sky-500 bg-white h-8  w-8 p-1 rounded-2xl"></i>
-                    </div>
-                    <div class="m-1.5 flex justify-between mt-5">
-                        <h3>BasketBall</h3>
-                        <p>3
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                        </p>
-                    </div>
-                    <div class="m-1.5 mt-5">
-                        <p class="text-black">15$ <del class="text-gray-400">20$</del><span class="text-sky-500">(15%
-                                off)</span></p>
-                    </div>
-                    <button onclick="addToCart({
-                            id: 10,
-                            name: 'BasketBall',
-                            price: 15,
-                            image: '../src/assets/images/basketball.png'
-                        })" class="bg-green-500 h-[49.48px] w-[262.91px] m-1.5 rounded-xl text-white mt-5">
-                        ADD TO CART
-                    </button>
-                </div>
-                <!-- Product Cards 7-->
-                <div class="w-[285px] h-[510px] bg-white  rounded-2xl p-1 relative">
-                    <img class="w-[262.91px] h-[322.89px] object-cover rounded-2xl m-1.5"
-                        src="../src/assets/images/tennisTrainer.png" alt="roundHead">
-                    <div class=""><i
-                            class="fa-regular fa-heart heart absolute inset-0 text-2xl ml-59 mt-5 text-sky-500 bg-white h-8  w-8 p-1 rounded-2xl"></i>
-                    </div>
-                    <div class="m-1.5 flex justify-between mt-5">
-                        <h3>Tennis Traner</h3>
-                        <p>4
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                        </p>
-                    </div>
-                    <div class="m-1.5 mt-5">
-                        <p class="text-black">68$ <del class="text-gray-400">80$</del><span class="text-sky-500">(15%
-                                off)</span></p>
-                    </div>
-                    <button onclick="addToCart({
-                            id: 11,
-                            name: 'Tennis Traner',
-                            price: 68,
-                            image: '../src/assets/images/tennisTrainer.png'
-                        })" class="bg-green-500 h-[49.48px] w-[262.91px] m-1.5 rounded-xl text-white mt-5">
-                        ADD TO CART
-                    </button>
-                </div>
-                <!-- Product Cards 8-->
-                <div class="w-[285px] h-[510px] bg-white rounded-2xl p-1 relative">
-                    <img class="w-[262.91px] h-[322.89px] object-cover rounded-2xl m-1.5"
-                        src="../src/assets/images/blueSoccerCleat.avif" alt="roundHead">
-                    <div class=""><i
-                            class="fa-regular fa-heart heart absolute inset-0 text-2xl ml-59 mt-5 text-sky-500 bg-white h-8  w-8 p-1 rounded-2xl"></i>
-                    </div>
-                    <div class="m-1.5 flex justify-between mt-5">
-                        <h3>blueSoccerCleat</h3>
-                        <p>4.5
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                        </p>
-                    </div>
-                    <div class="m-1.5 mt-5">
-                        <p class="text-black">330$ <del class="text-gray-400">350$</del><span class="text-sky-500">(15%
-                                off)</span></p>
-                    </div>
-                    <button onclick="addToCart({
-                        id: 12,
-                        name: 'blueSoccerCleat',
-                        price: 330,
-                        image: '../src/assets/images/blueSoccerCleat.avif'
-                        })" class="bg-green-500 h-[49.48px] w-[262.91px] m-1.5 rounded-xl text-white mt-5">
-                        ADD TO CART
-                    </button>
-                </div>
+                <button onclick="addToCart({
+                    id: 3,
+                    name: 'Golf-putter',
+                    price: 68,
+                    image: '../src/assets/images/golfPutter.png'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                ADD TO CART
+                </button>
             </div>
 
-            <!-- Limited Stock -->
-
-            <div class="bg-green-500 p-5 ml-30 mr-30 mt-20">
-                <h1 class="text-4xl text-center text-white">LIMITED STOCK</h1>
+            <!-- Product Card 4 -->
+            <div class="w-full bg-white rounded-2xl p-1 relative max-w-xs mx-auto sm:max-w-full">
+                <img class="w-full h-64 sm:h-72 md:h-80 object-cover rounded-2xl m-1.5"
+                    src="../src/assets/images/rugbyBall.jpg" alt="rugbyBall">
+                <div class="">
+                    <i class="fa-regular fa-heart heart absolute inset-0 text-xl sm:text-2xl ml-56 sm:ml-48 md:ml-56 mt-4 text-sky-500 bg-white h-8 w-8 p-1 rounded-2xl"></i>
+                </div>
+                <div class="m-1.5 flex justify-between mt-5 text-sm sm:text-base">
+                    <h3>Rugby-Ball</h3>
+                    <p>4.5
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                    </p>
+                </div>
+                <div class="m-1.5 mt-5 text-sm sm:text-base">
+                    <p class="text-black">30$ <del class="text-gray-400">35$</del><span class="text-sky-500">(15% off)</span></p>
+                </div>
+                <button onclick="addToCart({
+                    id: 4,
+                    name: 'Rugby-Ball',
+                    price: 30,
+                    image: '../src/assets/images/rugbyBall.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                ADD TO CART
+                </button>
             </div>
-            <div class="grid grid-cols-4 ml-30 mb-10 mr-30 mt-10 gap-10 ">
-                <!-- Product Cards 1-->
-                <div class="w-[285px] h-[510px] bg-white rounded-2xl p-1 relative">
-                    <img class="w-[262.91px] h-[322.89px] object-cover rounded-2xl m-1.5"
-                        src="../src/assets/images/basketbalJersey.webp" alt="roundHead">
-                    <div class=""><i
-                            class="fa-regular fa-heart absolute inset-0 text-2xl ml-59 mt-5 text-sky-500 bg-white h-8  w-8 p-1 rounded-2xl cursor-pointer heart"></i>
-                    </div>
-                    <div class="m-1.5 flex justify-between mt-5">
-                        <h3>basketbalJersey</h3>
-                        <p>2
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                        </p>
-                    </div>
-                    <div class="m-1.5 mt-5">
-                        <p class="text-black">28$ <del class="text-gray-400">35$</del><span class="text-sky-500">(15%
-                                off)</span></p>
-                    </div>
-                    <button onclick="addToCart({
-                            id: 13,
-                            name: 'basketbalJersey',
-                            price: 25,
-                            image: '../src/assets/images/basketbalJersey.webp'
-                        })" class="bg-green-500 h-[49.48px] w-[262.91px] m-1.5 rounded-xl text-white mt-5">
-                        ADD TO CART
-                    </button>
+        </div>
+
+        <!-- Text Bar 2 - Responsive -->
+        <div class="bg-green-500 p-3 sm:p-4 md:p-5 mx-4 sm:mx-6 md:mx-8 lg:mx-30 mt-10 sm:mt-16 md:mt-20">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl text-center text-white">BEST SELLING</h1>
+        </div>
+
+        <!-- Product Grid 2 - Responsive -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-4 sm:mx-6 md:mx-8 lg:mx-30 mt-8 sm:mt-12 md:mt-20 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
+            <!-- Product Card 1 -->
+            <div class="w-full bg-white rounded-2xl p-1 relative max-w-xs mx-auto sm:max-w-full">
+                <img class="w-full h-64 sm:h-72 md:h-80 object-cover rounded-2xl m-1.5"
+                    src="../src/assets/img-detail/tenis.jpg" alt="">
+                <div class="">
+                    <i class="fa-regular fa-heart absolute inset-0 text-xl sm:text-2xl ml-56 sm:ml-48 md:ml-56 mt-4 text-sky-500 bg-white h-8 w-8 p-1 rounded-2xl cursor-pointer heart"></i>
                 </div>
-                <!-- Product Cards 2-->
-                <div class="w-[285px] h-[510px] bg-white  rounded-2xl p-1 relative">
-                    <img class="w-[262.91px] h-[322.89px] object-cover rounded-2xl m-1.5"
-                        src="../src/assets/images/swmmingset.png" alt="roundHead">
-                    <div class=""><i
-                            class="fa-regular fa-heart absolute heart inset-0 text-2xl ml-59 mt-5 text-sky-500 bg-white h-8  w-8 p-1 rounded-2xl"></i>
-                    </div>
-                    <div class="m-1.5 flex justify-between mt-5">
-                        <h3>Swimming set</h3>
-                        <p>3
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                        </p>
-                    </div>
-                    <div class="m-1.5 mt-5">
-                        <p class="text-black">55$ <del class="text-gray-400">60$</del><span class="text-sky-500">(15%
-                                off)</span></p>
-                    </div>
-                    <button onclick="addToCart({
-                            id: 14,
-                            name: 'Swimming set',
-                            price: 55,
-                            image: '../src/assets/images/swmmingset.png'
-                        })" class="bg-green-500 h-[49.48px] w-[262.91px] m-1.5 rounded-xl text-white mt-5">
-                        ADD TO CART
-                    </button>
+                <div class="m-1.5 flex justify-between mt-5 text-sm sm:text-base">
+                    <h3>Tennis</h3>
+                    <p>2
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                    </p>
                 </div>
-                <!-- Product Cards 3-->
-                <div class="w-[285px] h-[510px] bg-white  rounded-2xl p-1 relative">
-                    <img class="w-[262.91px] h-[322.89px] object-cover rounded-2xl m-1.5"
-                        src="../src/assets/images/TreadMill.png" alt="roundHead">
-                    <div class=""><i
-                            class="fa-regular fa-heart heart absolute inset-0 text-2xl ml-59 mt-5 text-sky-500 bg-white h-8  w-8 p-1 rounded-2xl"></i>
-                    </div>
-                    <div class="m-1.5 flex justify-between mt-5">
-                        <h3>Tread Mill</h3>
-                        <p>4
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                        </p>
-                    </div>
-                    <div class="m-1.5 mt-5">
-                        <p class="text-black">460$ <del class="text-gray-400">480$</del><span class="text-sky-500">(15%
-                                off)</span></p>
-                    </div>
-                    <button onclick="addToCart({
-                            id: 15,
-                            name: 'Tread Mill',
-                            price: 460,
-                            image: '../src/assets/images/TreadMill.png'
-                        })" class="bg-green-500 h-[49.48px] w-[262.91px] m-1.5 rounded-xl text-white mt-5">
-                        ADD TO CART
-                    </button>
+                <div class="m-1.5 mt-5 text-sm sm:text-base">
+                    <p class="text-black">25$ <del class="text-gray-400">30$</del><span class="text-sky-500">(15% off)</span></p>
                 </div>
-                <!-- Product Cards 4-->
-                <div class="w-[285px] h-[510px] bg-white rounded-2xl p-1 relative">
-                    <img class="w-[262.91px] h-[322.89px] object-cover rounded-2xl m-1.5"
-                        src="../src/assets/images/hockeyStick.jpg" alt="roundHead">
-                    <div class=""><i
-                            class="fa-regular fa-heart heart absolute inset-0 text-2xl ml-59 mt-5 text-sky-500 bg-white h-8  w-8 p-1 rounded-2xl"></i>
-                    </div>
-                    <div class="m-1.5 flex justify-between mt-5">
-                        <h3>Hockey Stick</h3>
-                        <p>4.5
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                            <i class="fa-solid fa-star text-amber-400"></i>
-                        </p>
-                    </div>
-                    <div class="m-1.5 mt-5">
-                        <p class="text-black">50$ <del class="text-gray-400">55$</del><span class="text-sky-500">(15%
-                                off)</span></p>
-                    </div>
-                    <button onclick="addToCart({
-                        id: 4,
-                        name: 'Hockey Stick',
-                        price:50,
-                        image: '../src/assets/images/hockeyStick.jpg'
-                        })" class="bg-green-500 h-[49.48px] w-[262.91px] m-1.5 rounded-xl text-white mt-5">
-                        ADD TO CART
-                    </button>
-                </div>
-
-                <!--===========[ new ]========== -->
-                <!-- Add To Cart Popup -->
-                <!-- BIG PAYMENT POPUP -->
-                <div id="cartPopup"
-                    class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-70 z-50">
-                    <div id="popupItems" class="max-h-60 overflow-y-auto mb-6"></div>
-
-                    <div class="bg-white w-[90%] max-w-[600px] p-10 rounded-2xl text-center shadow-2xl">
-
-                        <h1 class="text-4xl font-bold mb-4 text-green-600">
-                            Cart Summary 🛒
-                        </h1>
-
-                        <p class="text-2xl mb-4">
-                            Total Amount:
-                        </p>
-
-                        <p class="text-5xl font-bold text-black mb-6">
-                            $<span id="popupTotal">0</span>
-                        </p>
-
-                        <p class="text-lg text-gray-600 mb-8">
-                            You can add more items, cancel, delete cart, or pay now.
-                        </p>
-
-                        <div class="grid grid-cols-2 gap-4 text-xl">
-                            <button onclick="closePopup()"
-                                class="bg-blue-500 text-white py-3 rounded-xl hover:bg-blue-600">
-                                ➕ Add More
-                            </button>
-
-                            <button onclick="cancelPopup()"
-                                class="bg-gray-500 text-white py-3 rounded-xl hover:bg-gray-600">
-                                ❌ Cancel
-                            </button>
-
-                            <button onclick="deleteCart()"
-                                class="bg-red-500 text-white py-3 rounded-xl hover:bg-red-600">
-                                🗑️ Delete Cart
-                            </button>
-
-                            <button onclick="payNow()"
-                                class="bg-green-500 text-white py-3 rounded-xl hover:bg-green-600">
-                                💳 Pay Now
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
+                <button onclick="addToCart({
+                    id: 1,
+                    name: 'Tennis',
+                    price: 25,
+                    image: '../src/assets/img-detail/tenis.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                ADD TO CART
+                </button>
             </div>
-    </main>
+
+            <!-- Product Card 2 -->
+            <div class="w-full bg-white rounded-2xl p-1 relative max-w-xs mx-auto sm:max-w-full">
+                <img class="w-full h-64 sm:h-72 md:h-80 object-cover rounded-2xl m-1.5"
+                    src="../src/assets/img-detail/Jersey.png" alt="img">
+                <div class="">
+                    <i class="fa-regular fa-heart absolute inset-0 text-xl sm:text-2xl ml-56 sm:ml-48 md:ml-56 mt-4 text-sky-500 bg-white h-8 w-8 p-1 rounded-2xl heart"></i>
+                </div>
+                <div class="m-1.5 flex justify-between mt-5 text-sm sm:text-base">
+                    <h3>T-shirt Jersey</h3>
+                    <p>3
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                    </p>
+                </div>
+                <div class="m-1.5 mt-5 text-sm sm:text-base">
+                    <p class="text-black">15$ <del class="text-gray-400">20$</del><span class="text-sky-500">(15% off)</span></p>
+                </div>
+                <button onclick="addToCart({
+                    id: 2,
+                    name: 'T-shirt Jersey',
+                    price: 15,
+                    image: '../src/assets/img-detail/Jersey.png'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                ADD TO CART
+                </button>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="w-full bg-white rounded-2xl p-1 relative max-w-xs mx-auto sm:max-w-full">
+                <img class="w-full h-64 sm:h-72 md:h-80 object-cover rounded-2xl m-1.5"
+                    src="../src/assets/img-detail/cy-helemt.jpg" alt="golfPutter">
+                <div class="">
+                    <i class="fa-regular fa-heart heart absolute inset-0 text-xl sm:text-2xl ml-56 sm:ml-48 md:ml-56 mt-4 text-sky-500 bg-white h-8 w-8 p-1 rounded-2xl"></i>
+                </div>
+                <div class="m-1.5 flex justify-between mt-5 text-sm sm:text-base">
+                    <h3>Cycling helemt</h3>
+                    <p>4
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                    </p>
+                </div>
+                <div class="m-1.5 mt-5 text-sm sm:text-base">
+                    <p class="text-black">68$ <del class="text-gray-400">80$</del><span class="text-sky-500">(15% off)</span></p>
+                </div>
+                <button onclick="addToCart({
+                    id: 3,
+                    name: 'Cycling helemt',
+                    price: 68,
+                    image: '../src/assets/img-detail/cy-helemt.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                ADD TO CART
+                </button>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="w-full bg-white rounded-2xl p-1 relative max-w-xs mx-auto sm:max-w-full">
+                <img class="w-full h-64 sm:h-72 md:h-80 object-cover rounded-2xl m-1.5"
+                    src="../src/assets/img-home/basket-Photoroom.png" alt="rugbyBall">
+                <div class="">
+                    <i class="fa-regular fa-heart heart absolute inset-0 text-xl sm:text-2xl ml-56 sm:ml-48 md:ml-56 mt-4 text-sky-500 bg-white h-8 w-8 p-1 rounded-2xl"></i>
+                </div>
+                <div class="m-1.5 flex justify-between mt-5 text-sm sm:text-base">
+                    <h3>Basket-Photorooml</h3>
+                    <p>4.5
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                    </p>
+                </div>
+                <div class="m-1.5 mt-5 text-sm sm:text-base">
+                    <p class="text-black">30$ <del class="text-gray-400">35$</del><span class="text-sky-500">(15% off)</span></p>
+                </div>
+                <button onclick="addToCart({
+                    id: 4,
+                    name: 'Basket-Photoroom',
+                    price: 30,
+                    image: '../src/assets/img-home/basket-Photoroom.png'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                ADD TO CART
+                </button>
+            </div>
+        </div>
+
+        <!-- Text Bar 3 - Responsive -->
+        <div class="bg-green-500 p-3 sm:p-4 md:p-5 mx-4 sm:mx-6 md:mx-8 lg:mx-30 mt-10 sm:mt-16 md:mt-20">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl text-center text-white">LIMIT STOCK</h1>
+        </div>
+
+        <!-- Product Grid 3 - Responsive -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mx-4 sm:mx-6 md:mx-8 lg:mx-30 mt-8 sm:mt-12 md:mt-20 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
+            <!-- Product Card 1 -->
+            <div class="w-full bg-white rounded-2xl p-1 relative max-w-xs mx-auto sm:max-w-full">
+                <img class="w-full h-64 sm:h-72 md:h-80 object-cover rounded-2xl m-1.5"
+                    src="../src/assets/img-detail/cy-pump.jpg" alt="">
+                <div class="">
+                    <i class="fa-regular fa-heart absolute inset-0 text-xl sm:text-2xl ml-56 sm:ml-48 md:ml-56 mt-4 text-sky-500 bg-white h-8 w-8 p-1 rounded-2xl cursor-pointer heart"></i>
+                </div>
+                <div class="m-1.5 flex justify-between mt-5 text-sm sm:text-base">
+                    <h3>Cycling pump</h3>
+                    <p>2
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                    </p>
+                </div>
+                <div class="m-1.5 mt-5 text-sm sm:text-base">
+                    <p class="text-black">25$ <del class="text-gray-400">30$</del><span class="text-sky-500">(15% off)</span></p>
+                </div>
+                <button onclick="addToCart({
+                    id: 1,
+                    name: 'Cycling pump',
+                    price: 25,
+                    image: '../src/assets/img-detail/cy-pump.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                ADD TO CART
+                </button>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="w-full bg-white rounded-2xl p-1 relative max-w-xs mx-auto sm:max-w-full">
+                <img class="w-full h-64 sm:h-72 md:h-80 object-cover rounded-2xl m-1.5"
+                    src="../src/assets/img-detail/f-bell.jpg" alt="img">
+                <div class="">
+                    <i class="fa-regular fa-heart absolute inset-0 text-xl sm:text-2xl ml-56 sm:ml-48 md:ml-56 mt-4 text-sky-500 bg-white h-8 w-8 p-1 rounded-2xl heart"></i>
+                </div>
+                <div class="m-1.5 flex justify-between mt-5 text-sm sm:text-base">
+                    <h3>Dex-dummble-set</h3>
+                    <p>3
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                    </p>
+                </div>
+                <div class="m-1.5 mt-5 text-sm sm:text-base">
+                    <p class="text-black">15$ <del class="text-gray-400">20$</del><span class="text-sky-500">(15% off)</span></p>
+                </div>
+                <button onclick="addToCart({
+                    id: 2,
+                    name: 'Dex-dummble-set',
+                    price: 15,
+                    image: '../src/assets/img-detail/f-bell.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                ADD TO CART
+                </button>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="w-full bg-white rounded-2xl p-1 relative max-w-xs mx-auto sm:max-w-full">
+                <img class="w-full h-64 sm:h-72 md:h-80 object-cover rounded-2xl m-1.5"
+                    src="../src/assets/img-detail/shirt.jpg" alt="golfPutter">
+                <div class="">
+                    <i class="fa-regular fa-heart heart absolute inset-0 text-xl sm:text-2xl ml-56 sm:ml-48 md:ml-56 mt-4 text-sky-500 bg-white h-8 w-8 p-1 rounded-2xl"></i>
+                </div>
+                <div class="m-1.5 flex justify-between mt-5 text-sm sm:text-base">
+                    <h3>T-Shirt Real Madrid</h3>
+                    <p>4
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                    </p>
+                </div>
+                <div class="m-1.5 mt-5 text-sm sm:text-base">
+                    <p class="text-black">68$ <del class="text-gray-400">80$</del><span class="text-sky-500">(15% off)</span></p>
+                </div>
+                <button onclick="addToCart({
+                    id: 3,
+                    name: 'T-Shirt Real Madrid',
+                    price: 68,
+                    image: '../src/assets/img-detail/shirt.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                ADD TO CART
+                </button>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="w-full bg-white rounded-2xl p-1 relative max-w-xs mx-auto sm:max-w-full">
+                <img class="w-full h-64 sm:h-72 md:h-80 object-cover rounded-2xl m-1.5"
+                    src="../src/assets/img-home/t-shirt.png" alt="rugbyBall">
+                <div class="">
+                    <i class="fa-regular fa-heart heart absolute inset-0 text-xl sm:text-2xl ml-56 sm:ml-48 md:ml-56 mt-4 text-sky-500 bg-white h-8 w-8 p-1 rounded-2xl"></i>
+                </div>
+                <div class="m-1.5 flex justify-between mt-5 text-sm sm:text-base">
+                    <h3>T-shirt</h3>
+                    <p>4.5
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                        <i class="fa-solid fa-star text-amber-400"></i>
+                    </p>
+                </div>
+                <div class="m-1.5 mt-5 text-sm sm:text-base">
+                    <p class="text-black">30$ <del class="text-gray-400">35$</del><span class="text-sky-500">(15% off)</span></p>
+                </div>
+                <button onclick="addToCart({
+                    id: 4,
+                    name: 'T-shirt',
+                    price: 30,
+                    image: '../src/assets/img-home/t-shirt.png'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                ADD TO CART
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
 
     <!-- Responsive Footer -->
     <footer class="bg-blue-300 text-white xl:h-110 xl:mt-49 py-10">
