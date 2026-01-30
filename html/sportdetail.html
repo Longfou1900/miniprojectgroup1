@@ -21,17 +21,23 @@
 
                 <!-- Logo -->
                 <div class="flex-shrink-0">
-                    <div class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white flex items-center justify-center shadow-md">
-                        <img src="../src/assets/images/image.png" alt="Sports Logo" class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full object-cover">
+                    <div
+                        class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white flex items-center justify-center shadow-md">
+                        <img src="../src/assets/images/image.png" alt="Sports Logo"
+                            class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full object-cover">
                     </div>
                 </div>
 
                 <!-- Navigation - Hidden on mobile, visible from md -->
                 <nav class="hidden md:flex items-center gap-4 lg:gap-8">
-                    <a href="../index.html" class="text-white font-semibold text-sm lg:text-lg hover:text-blue-100 transition-colors">Home</a>
-                    <a href="../html/about.html" class="text-white font-semibold text-sm lg:text-lg hover:text-blue-100 transition-colors">About</a>
-                    <a href="../html/product.html" class="text-white font-semibold text-sm lg:text-lg hover:text-blue-100 transition-colors">Product</a>
-                    <a href="../html/contact.html" class="text-white font-semibold text-sm lg:text-lg hover:text-blue-100 transition-colors">Contact</a>
+                    <a href="../index.html"
+                        class="text-white font-semibold text-sm lg:text-lg hover:text-blue-100 transition-colors">Home</a>
+                    <a href="../html/about.html"
+                        class="text-white font-semibold text-sm lg:text-lg hover:text-blue-100 transition-colors">About</a>
+                    <a href="../html/product.html"
+                        class="text-white font-semibold text-sm lg:text-lg hover:text-blue-100 transition-colors">Product</a>
+                    <a href="../html/contact.html"
+                        class="text-white font-semibold text-sm lg:text-lg hover:text-blue-100 transition-colors">Contact</a>
                 </nav>
 
                 <!-- Right side controls -->
@@ -53,8 +59,9 @@
                     </select>
 
                     <!-- Dark Mode Toggle -->
-                    <button onclick="toggle()" class="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full hover:border-white shadow-md transition-colors hover:border-2 ">
-        
+                    <button onclick="toggle()"
+                        class="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full hover:border-white shadow-md transition-colors hover:border-2 ">
+
                         <img id="themeIcon" class="flex justify-center items-center xl:w-8 xl:h-8 w-3 h-3 cursor-pointer invert brightness-0 
                                                 " src="../src/assets/icons/night.png" alt="">
                     </button>
@@ -73,17 +80,23 @@
 
             <!-- Mobile Navigation - Visible only on mobile -->
             <nav class="md:hidden pb-4 flex flex-col gap-2">
-                <a href="../index.html" class="text-white font-semibold text-sm hover:text-blue-100 transition-colors">Home</a>
-                <a href="../html/about.html" class="text-white font-semibold text-sm hover:text-blue-100 transition-colors">About</a>
-                <a href="../html/product.html" class="text-white font-semibold text-sm hover:text-blue-100 transition-colors">Product</a>
-                <a href="../html/contact.html" class="text-white font-semibold text-sm hover:text-blue-100 transition-colors">Contact</a>
+                <a href="../index.html"
+                    class="text-white font-semibold text-sm hover:text-blue-100 transition-colors">Home</a>
+                <a href="../html/about.html"
+                    class="text-white font-semibold text-sm hover:text-blue-100 transition-colors">About</a>
+                <a href="../html/product.html"
+                    class="text-white font-semibold text-sm hover:text-blue-100 transition-colors">Product</a>
+                <a href="../html/contact.html"
+                    class="text-white font-semibold text-sm hover:text-blue-100 transition-colors">Contact</a>
             </nav>
 
         </div>
     </header>
 
-    <header class="bg-blue-400 h-20 flex items-center justify-center sticky top-0 z-50 shadow-lg">
-        <select onchange="goToSection(this.value)" class="px-4 py-2 rounded-lg cursor-pointer shadow-lg shadow-white/50 text-black bg-blue-300 font-semibold hover:bg-blue-600 transition">
+    <header
+        class="bg-blue-400 h-30 flex items-center justify-center sticky top-0 z-50 shadow-lg mx-auto px-4 sm:px-6 lg:px-8">
+        <select onchange="goToSection(this.value)"
+            class="px-4 py-2 rounded-lg cursor-pointer shadow-lg shadow-white/50 text-black bg-blue-300 font-semibold hover:bg-blue-600 transition">
             <option selected disabled>Select Sport</option>
             <option value="basketball">Basketball</option>
             <option value="football">Football</option>
@@ -95,354 +108,787 @@
     </header>
 
     <main class="max-w-7xl mx-auto p-6 md:p-10 space-y-24">
+        <!-- Shopping Button -->
+        <div class="
+    fixed sm:sticky 
+    bottom-5 sm:bottom-auto sm:left-auto -translate-x-1/2 sm:translate-x-0 sm:top-40 top-32 left-90 sm:ml-100 md:ml-140 lg:ml-250 lg:top-150 z-80">
+            <div class="shadow-lg w-30">
+                <a href="../html/shoppingCard.html" class="px-3 sm:px-4 md:px-5 lg:px-6 
+                   py-1.5 sm:py-2 md:py-2.5 lg:py-3 
+                   text-xs sm:text-sm md:text-base lg:text-lg 
+                   font-bold rounded-2xl 
+                   bg-orange-300 shadow-lg shadow-green-500/50 
+                   text-white text-center
+                   flex items-center justify-center
+                   hover:bg-black hover:text-white">
+                    Pay now
+                </a>
+            </div>
+        </div>
+
         <!-- ===== Basketball ===== -->
         <section id="basketball">
             <h2 class="text-4xl font-bold text-green-500 mb-2">Basketball</h2>
-            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">Fast-paced team sport that improves endurance, coordination, and teamwork.</p>
+            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">
+                Fast-paced team sport that improves endurance, coordination, and teamwork.
+            </p>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+
                 <!-- Product Card 1 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/images/basketball.png" alt="Basketball Pro Ball" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/images/basketball.png" alt="Basketball Pro Ball"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Basketball Pro Ball</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">High grip indoor/outdoor ball</p>
+
+                        <button onclick="addToCart({
+                    id: 1,
+                    name: 'Basketball Pro Ball',
+                    price: 20,
+                    image: '../src/assets/images/basketball.png'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 2 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-home/shoes.png" alt="Basketball Shoes" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-home/shoes.png" alt="Basketball Shoes"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Basketball Shoes</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Strong ankle support</p>
+
+                        <button onclick="addToCart({
+                    id: 2,
+                    name: 'Basketball Shoes',
+                    price: 65,
+                    image: '../src/assets/img-home/shoes.png'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 3 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/Jersey.png" alt="Basketball Jersey" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/Jersey.png" alt="Basketball Jersey"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Basketball Jersey</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Breathable athletic wear</p>
+
+                        <button onclick="addToCart({
+                    id: 3,
+                    name: 'Basketball Jersey',
+                    price: 30,
+                    image: '../src/assets/img-detail/Jersey.png'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 4 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/bag.png" alt="Basketball Bag" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/bag.png" alt="Basketball Bag"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Basketball Bag</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Professional storage bag</p>
+
+                        <button onclick="addToCart({
+                    id: 4,
+                    name: 'Basketball Bag',
+                    price: 20,
+                    image: '../src/assets/img-detail/Jersey.png'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 5 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/hoop.png" alt="Basketball Hoop" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/hoop.png" alt="Basketball Hoop"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Basketball Hoop</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Indoor/outdoor hoop</p>
+
+                        <button onclick="addToCart({
+                    id: 5,
+                    name: 'Basketball Hoop',
+                    price: 20,
+                    image: '../src/assets/img-detail/Jersey.png'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
             </div>
         </section>
+
         <!-- ===== Football ===== -->
         <section id="football">
             <h2 class="text-4xl font-bold text-green-500 mb-2">Football</h2>
-            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">World's most popular sport, great for stamina and teamwork.</p>
+            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">
+                World's most popular sport, great for stamina and teamwork.
+            </p>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+
                 <!-- Product Card 1 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-red-600/10 to-red-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/ball.png" alt="Football Match Ball" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/ball.png" alt="Football Match Ball"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Football Match Ball</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400">FIFA standard quality</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">FIFA standard qualit</p>
+
+                        <button onclick="addToCart({
+                    id: 6,
+                    name: 'Football Match Ball',
+                    price: 20,
+                    image: '../src/assets/img-detail/ball.png'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 2 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-red-600/10 to-red-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/shoes-ball.jpg" alt="Football Boots" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/shoes-ball.jpg" alt="Football Boots"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Football Boots</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Perfect grip on grass</p>
+
+                        <button onclick="addToCart({
+                    id: 7,
+                    name: 'Football Boots',
+                    price: 65,
+                    image: '../src/assets/img-detail/shoes-ball.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 3 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-red-600/10 to-red-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/sock-ball.jpg" alt="Football Socks" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/sock-ball.jpg" alt="Football Socks"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Football Socks</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400">Moisture-wicking fabric</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">rotection & comfort</p>
+                        <button onclick="addToCart({
+                    id: 8,
+                    name: 'Football Socks',
+                    price: 30,
+                    image: '../src/assets/img-detail/Jersey.png'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 4 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-red-600/10 to-red-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/Guards.jpg" alt="Football Shin Guards" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/Guards.jpg" alt="Football Shin Guards
+" class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Football Shin Guards</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Protection & comfort</p>
+
+                        <button onclick="addToCart({
+                    id: 9,
+                    name: 'Football Shin Guards',
+                    price: 20,
+                    image: '../src/assets/img-detail/Jersey.png'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 5 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-red-600/10 to-red-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/Jersey.png" alt="Football Jersey" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/shirt.jpg" alt="Basketball Hoop"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Football Jersey</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400">Professional team wear</p>
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Basketball Hoop</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Indoor/outdoor hoop</p>
+
+                        <button onclick="addToCart({
+                    id: 10,
+                    name: 'Basketball Hoop',
+                    price: 20,
+                    image: '../src/assets/img-detail/Jersey.png'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
             </div>
         </section>
+
         <!-- ===== Tennis ===== -->
         <section id="tennis">
             <h2 class="text-4xl font-bold text-green-500 mb-2">Tennis</h2>
-            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">Improves reflexes, balance, and coordination.</p>
+            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">
+                Improves reflexes, balance, and coordination.
+            </p>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+
                 <!-- Product Card 1 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-yellow-600/10 to-yellow-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/tenis.jpg" alt="Tennis Racket" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/tenis.jpg" alt="Football Match Ball"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Tennis Racket</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400">Lightweight carbon frame</p>
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Football Match Ball</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">FIFA standard qualit</p>
+
+                        <button onclick="addToCart({
+                    id: 6,
+                    name: 'Football Match Ball',
+                    price: 20,
+                    image: '../src/assets/img-detail/tenis.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 2 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-yellow-600/10 to-yellow-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/tenis-ball.jpg" alt="Tennis Balls" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/tenis-ball.jpg" alt="Football Boots"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Tennis Balls</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400">Professional grade set</p>
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Football Boots</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Perfect grip on grass</p>
+
+                        <button onclick="addToCart({
+                    id: 7,
+                    name: 'Football Boots',
+                    price: 65,
+                    image: '../src/assets/img-detail/tenis-ball.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 3 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-yellow-600/10 to-yellow-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/ten-shoes.jpg" alt="Tennis Shoes" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/ten-shoes.jpg" alt="Football Socks"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Tennis Shoes</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400">Court-specific grip</p>
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Football Socks</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">rotection & comfort</p>
+
+                        <button onclick="addToCart({
+                    id: 8,
+                    name: 'Football Socks',
+                    price: 30,
+                    image: '../src/assets/img-detail/ten-shoes.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 4 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-yellow-600/10 to-yellow-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/ten-bag.jpg" alt="Tennis Bag" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/ten-bag.jpg" alt="Football Shin Guards"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Tennis Bag</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400">Racket storage & organization</p>
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Football Shin Guards</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Protection & comfort</p>
+
+                        <button onclick="addToCart({
+                    id: 9,
+                    name: 'Football Shin Guards',
+                    price: 20,
+                    image: '../src/assets/img-detail/ten-bag.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 5 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-yellow-600/10 to-yellow-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/ten-sweet-hang.jpg" alt="Wristband" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/ten-sweet-hang.jpg" alt="Basketball Hoop"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Wristband</h3>
-                        <p class="text-sm text-gray-600 dark:text-gray-400">Moisture-absorbing protection</p>
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Basketball Hoop</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Indoor/outdoor hoop</p>
+
+                        <button onclick="addToCart({
+                    id: 10,
+                    name: 'Basketball Hoop',
+                    price: 20,
+                    image: '../src/assets/img-detail/ten-sweet-hang.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
             </div>
         </section>
 
         <!-- ===== Cycling ===== -->
         <section id="cycling">
             <h2 class="text-4xl font-bold text-green-500 mb-2">Cycling</h2>
-            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">Excellent for cardio and leg strength.</p>
+            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">
+                Excellent for cardio and leg strength.
+            </p>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+
                 <!-- Product Card 1 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-orange-600/10 to-orange-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/cy-helemt.jpg" alt="Mountain Bike Helmet" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/cy-helemt.jpg" alt="Mountain Bike Helmet"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Mountain Bike Helmet</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Strong & lightweight</p>
+
+                        <button onclick="addToCart({
+                    id: 6,
+                    name: 'Mountain Bike Helmet',
+                    price: 20,
+                    image: '../src/assets/img-detail/cy-helemt.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 2 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-orange-600/10 to-orange-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/c-lock.jpg" alt="Bike Lock" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/c-lock.jpg" alt="Bike Lock"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Bike Lock</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Heavy-duty security</p>
+
+                        <button onclick="addToCart({
+                    id: 7,
+                    name: 'Bike Lock',
+                    price: 65,
+                    image: '../src/assets/img-detail/c-lock.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 3 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-orange-600/10 to-orange-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/cy-light.jpg" alt="Bike Lights" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/cy-light.jpg" alt="Cycling Lignt"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
-                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Bike Lights</h3>
+                        <h3 class="font-bold text-gray-900 dark:text-white mb-2">Cycling Light</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Front & rear LED set</p>
+
+                        <button onclick="addToCart({
+                    id: 8,
+                    name: 'Cycling Light',
+                    price: 30,
+                    image: '../src/assets/img-detail/cy-light.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 4 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-orange-600/10 to-orange-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/cy-sock.jpg" alt="Bike Gloves" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/cy-sock.jpg" alt="Bike Gloves"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Bike Gloves</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Padded grip comfort</p>
+
+                        <button onclick="addToCart({
+                    id: 9,
+                    name: 'Bike Gloves',
+                    price: 20,
+                    image: '../src/assets/img-detail/cy-sock.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 5 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-orange-600/10 to-orange-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/cy-pump.jpg" alt="Bike Pump" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/cy-pump.jpg" alt="Bike Pump"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Bike Pump</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Portable & portable</p>
+
+                        <button onclick="addToCart({
+                    id: 10,
+                    name: 'Bike Pump',
+                    price: 20,
+                    image: '../src/assets/img-detail/cy-pump.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
             </div>
         </section>
 
         <!-- ===== Swimming ===== -->
         <section id="swimming">
             <h2 class="text-4xl font-bold text-green-500 mb-2">Swimming</h2>
-            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">Full-body workout and low impact exercise.</p>
+            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">
+                Full-body workout and low impact exercise.
+            </p>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+
                 <!-- Product Card 1 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-cyan-600/10 to-cyan-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/s-glas.jpg" alt="Swimming Goggles" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/s-glas.jpg" alt="Swimming Goggles"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Swimming Goggles</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Anti-fog UV protection</p>
+
+                        <button onclick="addToCart({
+                    id: 6,
+                    name: 'Swimming Goggles',
+                    price: 20,
+                    image: '../src/assets/img-detail/s-glas.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 2 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-cyan-600/10 to-cyan-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/s-cap.jpg" alt="Swimming Cap" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/s-cap.jpg" alt="Swimming Cap"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Swimming Cap</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Water-resistant silicone</p>
+
+                        <button onclick="addToCart({
+                    id: 7,
+                    name: 'Swimming Cap',
+                    price: 65,
+                    image: '../src/assets/img-detail/s-cap.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 3 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-cyan-600/10 to-cyan-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/s-fin.jpg" alt="Swim Fins" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/s-fin.jpg" alt="Swim Fins"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Swim Fins</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Professional training grade</p>
+
+                        <button onclick="addToCart({
+                    id: 8,
+                    name: 'Swim Fins',
+                    price: 30,
+                    image: '../src/assets/img-detail/s-fin.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 4 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-cyan-600/10 to-cyan-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/s-bord.jpg" alt="Swim Kickboard" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/s-bord.jpg" alt="Swim Kickboard"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Swim Kickboard</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Buoyant training tool</p>
+
+                        <button onclick="addToCart({
+                    id: 9,
+                    name: 'Swim Kickboard',
+                    price: 20,
+                    image: '../src/assets/img-detail/s-bord.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 5 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-cyan-600/10 to-cyan-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/s-towel.jpg" alt="Swim Towel" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/s-towel.jpg" alt="Swim Towel"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Swim Towel</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Quick-dry microfiber</p>
+
+                        <button onclick="addToCart({
+                    id: 10,
+                    name: 'Swim Towel',
+                    price: 20,
+                    image: '../src/assets/img-detail/s-towel.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
             </div>
         </section>
 
-        <!-- ===== Fitness & Gym ===== -->
+        <!-- ===== Fitness & Gym1  ===== -->
         <section id="fitness">
             <h2 class="text-4xl font-bold text-green-500 mb-2">Fitness & Gym</h2>
-            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">Build strength, endurance, and flexibility.</p>
+            <p class="mb-8 max-w-3xl text-gray-600 dark:text-gray-400">
+                Full-body workout and low impact exercise.
+            </p>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+
                 <!-- Product Card 1 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-purple-600/10 to-purple-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/f-fit.jpg" alt="Dumbbell Set" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/f-fit.jpg" alt="Dumbbell Set"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Dumbbell Set</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Adjustable weights</p>
+
+                        <button onclick="addToCart({
+                    id: 6,
+                    name: 'Dumbbell Set',
+                    price: 20,
+                    image: '../src/assets/img-detail/f-fit.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 2 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-purple-600/10 to-purple-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/f-yo.jpg" alt="Yoga Mat" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/f-yo.jpg" alt="Yoga Mat"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Yoga Mat</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Non-slip surface</p>
+
+                        <button onclick="addToCart({
+                    id: 7,
+                    name: 'Yoga Mat',
+                    price: 65,
+                    image: '../src/assets/img-detail/f-yo.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 3 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-purple-600/10 to-purple-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/f-band.jpg" alt="Resistance Bands" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/f-band.jpg" alt="Resistance Bands"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Resistance Bands</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Set of 5 resistance levels</p>
+
+                        <button onclick="addToCart({
+                    id: 8,
+                    name: 'Resistance Bands',
+                    price: 30,
+                    image: '../src/assets/img-detail/f-band.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 4 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-purple-600/10 to-purple-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/f-bell.jpg" alt="Kettlebell" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/f-bell.jpg" alt="Kettlebell"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Kettlebell</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">16kg iron construction</p>
+
+                        <button onclick="addToCart({
+                    id: 9,
+                    name: 'Kettlebell',
+                    price: 20,
+                    image: '../src/assets/img-detail/f-bell.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
                 <!-- Product Card 5 -->
-                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
-                    <div class="bg-gradient-to-b from-purple-600/10 to-purple-500/10 h-64 flex items-center justify-center p-4">
-                        <img src="../src/assets/img-detail/f-hold.jpg" alt="Pull-up Bar" class="h-full w-full object-contain drop-shadow-lg" />
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-shadow overflow-hidden">
+                    <div
+                        class="bg-gradient-to-b from-blue-600/10 to-blue-500/10 h-64 flex items-center justify-center p-4">
+                        <img src="../src/assets/img-detail/f-hold.jpg" alt="Pull-up Bar"
+                            class="h-full w-full object-contain drop-shadow-lg" />
                     </div>
                     <div class="p-4">
                         <h3 class="font-bold text-gray-900 dark:text-white mb-2">Pull-up Bar</h3>
                         <p class="text-sm text-gray-600 dark:text-gray-400">Doorway installation</p>
+
+                        <button onclick="addToCart({
+                    id: 10,
+                    name: 'Pull-up Bar',
+                    price: 20,
+                    image: '../src/assets/img-detail/f-hold.jpg'
+                })" class="bg-green-500 h-10 sm:h-12 w-full m-1.5 rounded-xl text-white text-xs sm:text-sm font-semibold mt-5 hover:bg-green-600 transition-colors">
+                            ADD TO CART
+                        </button>
                     </div>
                 </div>
+
             </div>
         </section>
     </main>
 
-        <footer class="bg-blue-300 text-white xl:h-110 xl:mt-49 py-10">
+    <footer class="bg-blue-300 text-white xl:h-110 xl:mt-49 py-10">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 text-center lg:text-left">
 
@@ -517,7 +963,7 @@
                 <div class="">
                     <h3 class="font-semibold text-2xl lg:text-3xl mb-4">Social Media</h3>
                     <div class="flex gap-3 justify-center lg:justify-start flex-wrap">
-                        <div 
+                        <div
                             class="border-2 border-blue-500 p-2 pr-3 pl-3 rounded-lg hover:bg-blue-500 transition-all cursor-pointer">
                             <i class="fa-brands fa-facebook-f text-xl text-white"></i>
                         </div>
@@ -661,5 +1107,3 @@
 </body>
 
 </html>
-
-
