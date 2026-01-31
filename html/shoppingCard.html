@@ -102,24 +102,22 @@
         </div>
     </header>
 
-    <main>
-        <div class="">
-            <div id="cartItems" class="p-10"></div>
-        </div>
-        <!-- Payment Section -->
-        <div id="paymentSection" class="p-10 bg-white rounded-xl mt-10 text-right flex justify-center items-center">
-            <h2 class="text-3xl font-bold mb-4">
-                Grand Total: $
-                <span id="grandTotal">0</span>
-            </h2>
-
-            <button onclick="payNow()"
-                class="ml-25  bg-orange-500 text-white px-8 py-3 rounded-xl text-2xl hover:font-bold hover:bg-green-600">
-                PAY NOW
-            </button>
-        </div>
-
-    </main>
+<main>
+    <div>
+        <div id="cartItems" class="p-10"></div>
+    </div>
+    <div id="paymentSection" class="p-10 bg-white rounded-xl mt-10 text-right flex justify-center items-center">
+        <h2 class="text-3xl font-bold mb-4">
+            Grand Total: $
+            <span id="grandTotal">0</span>
+        </h2>
+        
+        <button type="button" onclick="payNow()"
+            class="ml-25 bg-orange-500 text-white px-8 py-3 rounded-xl text-2xl hover:font-bold hover:bg-green-600">
+            PAY NOW
+        </button>
+    </div>
+</main>
 
 
     <!-- footer  -->

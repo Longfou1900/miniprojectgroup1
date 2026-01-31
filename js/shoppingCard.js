@@ -88,8 +88,7 @@ function payNow() {
   }
 
   alert("Payment successful 🎉 Thank you!");
-  localStorage.removeItem("cart");
-  loadCart();
+  localStorage.removeItem("cart"); // clear cart
 }
 
 // load on page open
