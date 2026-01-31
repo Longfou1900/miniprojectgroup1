@@ -20,6 +20,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 sm:h-20 md:h-24 lg:h-28">
 
+                <!-- Menu button -->
+                <div class="flex items-center -ml-5 sm:hidden md:hidden lg:hidden">
+                    <button id="menuButton" onclick="toggleDropdown()"
+                        class="left-0 text-white font-semibold px-4 py-2 rounded-lg focus:outline-none shadow-md z-50 relative">
+                        ☰
+                    </button>
+                </div>
                 <!-- Logo -->
                 <div class="flex-shrink-0">
                     <div
@@ -30,7 +37,7 @@
                 </div>
 
                 <!-- Navigation - Hidden on mobile, visible from md -->
-                <nav class="hidden md:flex items-center gap-4 lg:gap-8">
+                <nav class="hidden md:flex items-center gap-4 lg:gap-8 relative">
                     <a href="../index.html"
                         class="text-white font-semibold text-sm lg:text-lg hover:text-blue-100 transition-colors">Home</a>
                     <a href="../html/about.html"
@@ -74,23 +81,24 @@
                        hover:bg-black hover:text-white">
                         Shopping
                     </a>
-
                 </div>
-
             </div>
 
-            <!-- Mobile Navigation - Visible only on mobile -->
-            <nav class="md:hidden pb-4 flex flex-col gap-2">
+        </div>
+        <!-- Overlay Dropdown links, initially hidden -->
+        <div id="dropdownOverlay" class="hidden fixed left-0 -inset-9.5 flex justify-start items-start pt-24">
+            <div class="bg-blue-400/50 rounded-lg p-6 flex flex-col gap-4 shadow-lg">
                 <a href="../index.html"
-                    class="text-white font-semibold text-sm hover:text-blue-100 transition-colors">Home</a>
+                    class="text-white font-semibold text-sm hover:text-black hover:font-bold">Home</a>
                 <a href="../html/about.html"
-                    class="text-white font-semibold text-sm hover:text-blue-100 transition-colors">About</a>
+                    class="text-white font-semibold text-sm hover:text-black hover:font-bold">About</a>
                 <a href="../html/product.html"
-                    class="text-white font-semibold text-sm hover:text-blue-100 transition-colors">Product</a>
+                    class="text-white font-semibold text-sm hover:text-black hover:font-bold">Product</a>
                 <a href="../html/contact.html"
-                    class="text-white font-semibold text-sm hover:text-blue-100 transition-colors">Contact</a>
-            </nav>
-
+                    class="text-white font-semibold text-sm hover:text-black hover:font-bold">Contact</a>
+                <button onclick="toggleDropdown()"
+                    class="mt-4 bg-black/70 px-3 py-1 rounded text-white font-semibold hover:bg-black">Close</button>
+            </div>
         </div>
     </header>
 
@@ -338,6 +346,12 @@
     <script src="../js/dark_mode.js"></script>
     <!-- //dropdown products -->
     <script src="../js/category.js"></script>
+        <script>
+        function toggleDropdown() {
+            const overlay = document.getElementById("dropdownOverlay");
+            overlay.classList.toggle("hidden");
+        }
+    </script>
 </body>
 
 </html>
